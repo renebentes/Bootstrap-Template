@@ -13,20 +13,16 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $tpath; ?>/images/apple-touch-icon-72x72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $tpath; ?>/images/apple-touch-icon-114x114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $tpath; ?>/images/apple-touch-icon-144x144-precomposed.png">
+	<!-- Le HTML5 shim and media query for IE8 support -->
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script type="text/javascript" src="<?php echo $tpath; ?>/js/respond.min.js"></script>
+	<![endif]-->
 </head>
   
 <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>" role="document">
-  
-	<!-- 
-		1. line is test code
-		2. line is example code
-		Do not use both lines together! 
-		Delete lines and files to start your own development.
-		Copy and paste the code of bootstrap.example.php to index.php when needed.
-	-->
 
-	<?php require_once 'html/bootstrap.test.php'; ?>
-	<?php //require_once 'html/bootstrap.example.php'; ?>
+	<?php require_once 'html/bootstrap.test.php'; // test only - delete this line ?>
 
 	<!-- 
 		YOUR CODE HERE

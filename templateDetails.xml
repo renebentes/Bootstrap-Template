@@ -26,6 +26,7 @@
 		<filename>index.php</filename>
 		<filename>logic.php</filename>
 		<filename>offline.php</filename>
+		<filename>runless.php</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<filename>favicon.ico</filename>
@@ -35,8 +36,20 @@
 	<positions><!-- define the positions for modules here -->
 		<position>navbar</position>
 		<position>breadcrumbs</position>
+		<position>largebar</position>
 		<position>sidebar</position>
 		<position>debug</position>
 	</positions>
 	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="runless" type="radio" default="1" label="Run Less Compiler" description="">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
 </extension>
